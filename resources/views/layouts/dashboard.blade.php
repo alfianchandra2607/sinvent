@@ -11,7 +11,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Barang</h5>
                         <p class="card-text">Kelola data barang siswa.</p>
-                        <a href="" class="btn btn-primary">Lihat Data</a>
+                        <a href="{{route('barang.index')}}" class="btn btn-primary">Lihat Data</a>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Kategori</h5>
                         <p class="card-text">Kelola data kategori barang.</p>
-                        <a href="" class="btn btn-primary">Lihat Data</a>
+                        <a href="{{route('kategori.index')}}" class="btn btn-primary">Lihat Data</a>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Barang Masuk</h5>
                         <p class="card-text">Kelola data barang masuk.</p>
-                        <a href="" class="btn btn-primary">Lihat Data</a>
+                        <a href="{{route('barangmasuk.index')}}" class="btn btn-primary">Lihat Data</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Barang Keluar</h5>
                         <p class="card-text">Kelola data barang keluar.</p>
-                        <a href="" class="btn btn-primary">Lihat Data</a>
+                        <a href="{{route('barangkeluar.index')}}" class="btn btn-primary">Lihat Data</a>
                     </div>
                 </div>
             </div>
