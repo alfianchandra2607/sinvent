@@ -38,10 +38,25 @@ class KategoriController extends Controller
     public function store(Request $request)
     {
         
-        $request->validate([
-            'deskripsi' => 'required|string|max:100',
-            'kategori' => 'required|in:M,A,BHP,BTHP',
-        ]);
+        // $request->validate([
+        //     'deskripsi' => 'required|string|max:100',
+        //     'kategori' => 'required|in:M,A,BHP,BTHP',
+        // ]);
+
+        try {
+            DB::beginTransaction(); // <= Starting the transaction
+            // Insert a new order history
+            DB::table('kategori')->insert([
+                'order_id' => $orderID,
+                'status' => 'pending',
+            ]);
+        
+            DB::commit(); // <= Commit the changes
+        } catch (\Exception $e) {
+            report($e);
+            
+            DB::rollBack(); // <= Rollback in case of an exception
+        }
 
         $existingKategori = Kategori::where('deskripsi', $request->deskripsi)->first();
 
