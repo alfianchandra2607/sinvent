@@ -29,7 +29,7 @@
                             </tbody>
                         </table>
                         
-                        <a href="{{ route('barangmasuk.index') }}" class="btn btn-md btn-secondary">KEMBALI</a>
+                        <a href="{{ route('barangmasuk.index') }}" class="btn btn-md btn-secondary">KEMBALI.</a>
                     </div>
                 </div>
             </div>

@@ -46,7 +46,7 @@
                             </tr>
                         @empty
                         <tr>
-                                <td colspan="7" class="text-center">Data Barang Masuk belum tersedia</td>
+                                <td colspan="7" class="text-center">Data Barang Masuk belum tersedia.</td>
                             </tr>
                         @endforelse
                     </tbody>

@@ -10,7 +10,7 @@
                             @csrf
 
                             <div class="form-group">
-                                <label class="font-weight-bold">TANGGAL MASUK</label>
+                                <label class="font-weight-bold">TANGGAL MASUK.</label>
                                 <input type="date" class="form-control @error('tgl_masuk') is-invalid @enderror" name="tgl_masuk" value="{{ old('tgl_masuk') }}" required>
                                 @error('tgl_masuk')
                                     <div class="alert alert-danger mt-2">{{ $message }}</div>

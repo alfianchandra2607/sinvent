@@ -45,7 +45,7 @@
                                 @enderror
                             </div> -->
 
-                            <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
+                            <button type="submit" class="btn btn-md btn-primary">SIMPAN.</button>
                             <a href="{{ route('barangmasuk.index') }}" class="btn btn-md btn-warning">BATAL</a>
                         </form>
                     </div>
