@@ -78,8 +78,10 @@ class KategoriController extends Controller
 
     public function show($id)
     {
-        $kategori = Kategori::findOrFail($id);
-        return view('kategori.show', compact('kategori'));
+        $rsetKategori = DB::select('call getKategoriById(?)',[$id]);
+        
+        dd($rsetKategori);
+        return view('v_kategori.show', compact('rsetKategori'));
     }
 
     public function edit($id)
