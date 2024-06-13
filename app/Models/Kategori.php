@@ -21,8 +21,8 @@ class Kategori extends Model
         // ->select('kategori.id', 'deskripsi', DB::raw('ketKategori(kategori) as ketkategori'),'kategori')
         // ->get();
 
-        // return DB::table('vkategori')
-        // ->select('vkategori.id', 'deskripsi','kat')
-        // ->get();
+        return DB::table('vkategori')
+        ->select('vkategori.id', 'deskripsi','kat')
+        ->get();
     }
 }

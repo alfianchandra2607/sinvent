@@ -7,6 +7,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::resource('/kategori', \App\Http\Controllers\KategoriController::class)->middleware('auth');
+Route::resource('/barang', \App\Http\Controllers\BarangController::class)->middleware('auth');
+
+
+
+
+
 Route::get('/dashboard', function () {
     return view('layouts.dashboard');
 })->middleware('auth')->name('dashboard');
