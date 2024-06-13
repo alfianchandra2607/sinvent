@@ -10,7 +10,7 @@ Route::get('/', function () {
 
 Route::resource('/kategori', \App\Http\Controllers\KategoriController::class)->middleware('auth');
 Route::resource('/barang', \App\Http\Controllers\BarangController::class)->middleware('auth');
-
+Route::resource('/barangmasuk', \App\Http\Controllers\BarangmasukController::class)->middleware('auth');
 
 
 

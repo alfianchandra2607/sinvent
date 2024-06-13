@@ -59,7 +59,7 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="4">Data Kategori belum tersedia</td>
+                                <td colspan="4">Data Kategori belum tersediaa</td>
                             </tr>
                         @endforelse
                     </tbody>
