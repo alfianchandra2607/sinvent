@@ -89,7 +89,7 @@
             <!-- <a class="collapse-item" href="">Barang</a> -->
             <!-- <a class="collapse-item" href="">Kategori</a> -->
             <a class="collapse-item" href="{{route('barangmasuk.index')}}">Barang Masuk.</a>
-            <a class="collapse-item" href="">Barang Keluar</a>
+            <a class="collapse-item" href="{{route('barangkeluar.index')}}">Barang Keluar</a>
         </div>
     </div>
 </li>
